@@ -1,0 +1,37 @@
+How does Python resolve method calls when a class inherits from multiple parent classes that share a common ancestor (known as the Diamond Inheritance problem), and how can you programmatically check this lookup order?
+
+
+class Base:
+    def process(self):
+        print("Entering Base")
+        print("Leaving Base")
+
+class Left(Base):
+    def process(self):
+        print("Entering Left")
+        super().process()  # Python looks at the MRO chain to find the next class
+        print("Leaving Left")
+
+class Right(Base):
+    def process(self):
+        print("Entering Right")
+        super().process()
+        print("Leaving Right")
+
+class Child(Left, Right):
+    def process(self):
+        print("Entering Child")
+        super().process()
+        print("Leaving Child")
+
+# --- Execution and Inspection ---
+
+# 1. Print the programmatically resolved Method Resolution Order (MRO)
+print("--- Method Resolution Order for Child ---")
+for cls in Child.mro():
+    print(cls.__name__)
+
+print("\n--- Executing Child.process() ---")
+# 2. Instantiate the child and run the method
+obj = Child()
+obj.process()
