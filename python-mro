@@ -24,14 +24,27 @@ class Child(Left, Right):
         super().process()
         print("Leaving Child")
 
-# --- Execution and Inspection ---
 
-# 1. Print the programmatically resolved Method Resolution Order (MRO)
-print("--- Method Resolution Order for Child ---")
-for cls in Child.mro():
-    print(cls.__name__)
+2) How do you create a Python decorator that accepts arguments (like a custom prefix or a repeat count), and what does the structural code look like?
 
-print("\n--- Executing Child.process() ---")
-# 2. Instantiate the child and run the method
-obj = Child()
-obj.process()
+import functools
+
+def repeat(num_times):
+    """Top-level function to accept decorator arguments."""
+    def decorator_repeat(func):
+        """The actual decorator that accepts the target function."""
+        @functools.wraps(func) # Preserves original function identity and docstrings
+        def wrapper(*args, **kwargs):
+            """The inner wrapper that executes the custom logic."""
+            for _ in range(num_times):
+                result = func(*args, **kwargs)
+            return result
+        return wrapper
+    return decorator_repeat
+
+
+output:
+Hello, Alice!
+Hello, Alice!
+Hello, Alice!
+
