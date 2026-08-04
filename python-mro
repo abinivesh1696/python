@@ -9,9 +9,7 @@ Code Output:
 *
 **
 ***
-****
-*****
-
+****xx
 -____-____-
 
 1)How does Python resolve method calls when a class inherits from multiple parent classes that share a common ancestor (known as the Diamond Inheritance problem), and how can you programmatically check this lookup order?
