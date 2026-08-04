@@ -43,6 +43,7 @@ class Child(Left, Right):
 
 2) How do you create a Python decorator that accepts arguments (like a custom prefix or a repeat count), and what does the structural code look like?
 
+
 import functools
 
 def repeat(num_times):
@@ -63,4 +64,21 @@ output:
 Hello, Alice!
 Hello, Alice!
 Hello, Alice!
+
+3) How do you take a list of numbers and create a new list containing only the even numbers, and what is the cleanest way to do this in Python?
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# --- Method 1: The Traditional Loop Way ---
+even_numbers_loop = []
+for x in numbers:
+    if x % 2 == 0:  # Checks if the number is divisible by 2
+        even_numbers_loop.append(x)
+
+print("Traditional loop result:", even_numbers_loop)
+
+
+# --- Method 2: The Clean List Comprehension Way ---
+# This does the exact same thing in a single line
+even_numbers_clean = [x for x in numbers if x % 2 == 0]
+
 
