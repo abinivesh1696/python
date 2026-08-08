@@ -12,32 +12,16 @@ Code Output:
 ****xx
 -____-____-
 
-1)How does Python resolve method calls when a class inherits from multiple parent classes that share a common ancestor (known as the Diamond Inheritance problem), and how can you programmatically check this lookup order?
+1)Find the Smallest Number in a List 
+numbers = [25, 10, 45, 5, 30]
 
+smallest = min(numbers)
 
-class Base:
-    def process(self):
-        print("Entering Base")
-        print("Leaving Base")
+print("Smallest:", smallest)
 
-class Left(Base):
-    def process(self):
-        print("Entering Left")
-        super().process()  # Python looks at the MRO chain to find the next class
-        print("Leaving Left")
+Output:
 
-class Right(Base):
-    def process(self):
-        print("Entering Right")
-        super().process()
-        print("Leaving Right")
-
-class Child(Left, Right):
-    def process(self):
-        print("Entering Child")
-        super().process()
-        print("Leaving Child")
-
+Smallest: 5
 
 2) How do you create a Python decorator that accepts arguments (like a custom prefix or a repeat count), and what does the structural code look like?
 
