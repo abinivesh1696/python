@@ -92,14 +92,22 @@ a = 10
 b = 25
 c = 15
 
+largest = max(a, b, c)
+print("Largest:", largest)
+
 
 6) Write a Python function that takes a person's name and age as input and returns a message.
-
 If age is 18 or above, return "Eligible to vote".
 Otherwise, return "Not eligible to vote".
 
+def check_voting(name, age):
+    if age >= 18:
+        return name + " is eligible to vote"
+    else:
+        return name + " is not eligible to vote"
+print(check_voting("Abinivesh", 22))
 
+Output:
+Abinivesh is eligible to vote
 
-largest = max(a, b, c)
-print("Largest:", largest)
 
