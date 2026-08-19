@@ -23,13 +23,14 @@ Output:
 
 Smallest: 5
 
+
 2) How do you create a Python decorator that accepts arguments (like a custom prefix or a repeat count), and what does the structural code look like?
 
 
 import functools
 
 def repeat(num_times):
-    """Top-level function to accept decorator arguments."""
+    
     def decorator_repeat(func):
         """The actual decorator that accepts the target function."""
         @functools.wraps(func) # Preserves original function identity and docstrings
