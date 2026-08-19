@@ -121,6 +121,35 @@ def reverse_string(text: str) -> str:
 string_output = reverse_string("hello")
 print(f"1. Reverse String Output: {string_output}")
 
-Reverse String Output: olleh
+Reverse String Output:
+olleh
+
+
+8) Find the Maximum Number
+def find_maximum(numbers: list) -> int:
+    if not numbers:
+        return None
+    
+    max_num = numbers[0]
+    for num in numbers:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+# Running test cases
+num_list = [4, 12, 9, 67, 2, 45]
+max_output = find_maximum(num_list)
+print(f"2. Maximum Number Output: {max_output}")
+
+Maximum Number Output:
+67
+
+
+
+
+
+
+
+
 
 
