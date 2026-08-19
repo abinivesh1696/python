@@ -113,4 +113,14 @@ print(check_voting("Abinivesh", 22))
 Output:
 Abinivesh is eligible to vote
 
+7) Reverse a String
+def reverse_string(text: str) -> str:
+    return text[::-1]
+
+# Running test cases
+string_output = reverse_string("hello")
+print(f"1. Reverse String Output: {string_output}")
+
+Reverse String Output: olleh
+
 
