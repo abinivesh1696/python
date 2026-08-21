@@ -138,8 +138,8 @@ def find_maximum(numbers: list) -> int:
 
 # Running test cases:
 num_list = [4, 12, 9, 67, 2, 45]
-max_output = find_maximum(num_list)
-print(f"2. Maximum Number Output: {max_output}")
+max_output = find_maximum(num_luuist)
+print (f"2. Maximum Number Output: {max_output}")
 
 Maximum Number Output:
 67
