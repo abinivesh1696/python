@@ -159,8 +159,19 @@ OUTPUT:
 The sum is: 27
 
 
+Check for Even or Odd Number:
 
+# Input number
+num = 7
 
+# Conditional check
+if num % 2 == 0:
+    print("The number is Even")
+else:
+    print("The number is Odd")
+
+Output:
+The number is Odd
 
 
 
