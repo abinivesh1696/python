@@ -173,7 +173,9 @@ else:
 Output:
 The number is Odd
 
-10) text = "Python"
+10) rever string
+
+text = "Python"
 
 # Slice to reverse
 reversed_text = text[::-1]
@@ -182,6 +184,23 @@ print(reversed_text)
 
 Output:
  nohtyP
+
+11) Check a List of Numbers
+# List of different numbers
+numbers = [4, 11, 23, 42, 8]
+
+# Loop through each number in the list
+for num in numbers:
+    if num % 2 == 0:
+        print(f"{num} is Even")
+    else:
+        print(f"{num} is Odd")
+Output :
+4 is Even
+11 is Odd
+23 is Odd
+42 is Even
+8 is Even
 
 
 
