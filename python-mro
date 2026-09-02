@@ -195,6 +195,7 @@ for num in numbers:
         print(f"{num} is Even")
     else:
         print(f"{num} is Odd")
+
 Output :
 4 is Even
 11 is Odd
