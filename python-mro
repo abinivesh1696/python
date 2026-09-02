@@ -173,6 +173,17 @@ else:
 Output:
 The number is Odd
 
+10) text = "Python"
+
+# Slice to reverse
+reversed_text = text[::-1]
+
+print(reversed_text)  
+
+Output:
+ nohtyP
+
+
 
 
 
