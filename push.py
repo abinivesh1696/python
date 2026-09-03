@@ -1,6 +1,6 @@
 print("sample for python")
 
-username = "ABHINIVESH"
+username = "ABINIVESH"
 exp = 10
 value = 12.000
 
