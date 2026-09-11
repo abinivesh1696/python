@@ -204,6 +204,26 @@ Output :
 8 is Even
 
 
+8) Find the Maximum Number
+def find_maximum(numbers: list) -> int:
+    if not numbers:
+        return None
+    
+    max_num = numbers[0]
+    for num in numbers:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+# Running test cases:
+num_list = [4, 12, 9, 67, 2, 45]
+max_output = find_maximum(num_luuist)
+print (f"2. Maximum Number Output: {max_output}")
+
+Maximum Number Output:
+67
+
+
 simple code has been over and move to next 
 
 
