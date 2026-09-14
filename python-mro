@@ -204,7 +204,7 @@ Output :
 8 is Even
 
 
-12 ) 
+12 ) List and generator comprehension examples
 a = [x * 2 for x in range(10)]
 b = (x * 2 for x in range(10))
 
